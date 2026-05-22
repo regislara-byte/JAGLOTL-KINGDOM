@@ -14,6 +14,8 @@
 **A solo-developer dark fantasy kingdom builder.**
 *Build your Tore. Command your Legion. Rule the Void.*
 
+---
+
 ## 🌐 Live Preview
 
 ### 🔐 Tore Login
