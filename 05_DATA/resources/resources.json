@@ -1,0 +1,64 @@
+{
+  "player": {
+    "name": "Sigeralarlotl",
+    "level": 7,
+    "xp": 3420,
+    "xpNext": 5000,
+    "builders": {
+      "total": 3,
+      "available": 2
+    },
+    "shield": {
+      "active": true,
+      "expiresAt": "2026-05-23T18:00:00Z"
+    },
+    "notifications": 3
+  },
+  "resources": {
+    "celestialGold": {
+      "id": "celestial_gold",
+      "label": "Celestial Gold",
+      "icon": "✦",
+      "color": "#FFD700",
+      "amount": 124500,
+      "max": 500000,
+      "perHour": 2400
+    },
+    "divineElixir": {
+      "id": "divine_elixir",
+      "label": "Divine Elixir",
+      "icon": "⬡",
+      "color": "#9B59B6",
+      "amount": 87200,
+      "max": 300000,
+      "perHour": 1800
+    },
+    "voidEssence": {
+      "id": "void_essence",
+      "label": "Void Essence",
+      "icon": "◈",
+      "color": "#1ABC9C",
+      "amount": 3450,
+      "max": 20000,
+      "perHour": 120
+    },
+    "torium": {
+      "id": "torium",
+      "label": "Torium",
+      "icon": "⬢",
+      "color": "#E74C3C",
+      "amount": 1200,
+      "max": 10000,
+      "perHour": 60
+    },
+    "jwar": {
+      "id": "jwar",
+      "label": "JWAR",
+      "icon": "⚔",
+      "color": "#F39C12",
+      "amount": 580,
+      "max": 5000,
+      "perHour": 30
+    }
+  }
+}

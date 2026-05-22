@@ -1,0 +1,14 @@
+{
+  "tore_levels": [
+    { "level": 1, "unlocks": ["Builder Hut"], "goldCost": 0, "time": 0 },
+    { "level": 2, "unlocks": ["Celestial Mine"], "goldCost": 1000, "time": 1800 },
+    { "level": 3, "unlocks": ["Divine Shrine"], "goldCost": 3000, "time": 7200 },
+    { "level": 4, "unlocks": ["Scout Tower"], "goldCost": 8000, "time": 14400 },
+    { "level": 5, "unlocks": ["Skilljar", "Relic Vault"], "goldCost": 18000, "time": 28800 },
+    { "level": 6, "unlocks": ["Beast Sanctum"], "goldCost": 40000, "time": 57600 },
+    { "level": 7, "unlocks": ["2nd Builder Hut"], "goldCost": 85000, "time": 172800 },
+    { "level": 8, "unlocks": ["Void Extractor"], "goldCost": 160000, "time": 259200 },
+    { "level": 9, "unlocks": ["Rune Forge"], "goldCost": 300000, "time": 432000 },
+    { "level": 10, "unlocks": ["Legion Barracks"], "goldCost": 600000, "time": 604800 }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "pets": [
+    {
+      "id": "embervein_wyvern",
+      "name": "Embervein Wyvern",
+      "rarity": "epic",
+      "element": "fire",
+      "level": 4,
+      "ability": "Scorched Earth — deals void-fire AoE in a 3x3 grid",
+      "passiveBonus": "+8% gold production",
+      "description": "A wyvern whose veins run with molten celestial ore.",
+      "icon": "🐲",
+      "unlocked": true
+    },
+    {
+      "id": "frostbone_hound",
+      "name": "Frostbone Hound",
+      "rarity": "rare",
+      "element": "ice",
+      "level": 2,
+      "ability": "Glacial Howl — slows enemy attack speed by 20% for 5 turns",
+      "passiveBonus": "+5% scout range",
+      "description": "A spectral wolf that hunts from the frozen north.",
+      "icon": "🐺",
+      "unlocked": true
+    },
+    {
+      "id": "runesworn_owl",
+      "name": "Runesworn Owl",
+      "rarity": "legendary",
+      "element": "arcane",
+      "level": 1,
+      "ability": "Arcane Sight — reveals hidden enemy traps and ambushes",
+      "passiveBonus": "+12% hero XP gain",
+      "description": "An ancient owl bound to the oldest rune-stone.",
+      "icon": "🦉",
+      "unlocked": false
+    }
+  ]
+}

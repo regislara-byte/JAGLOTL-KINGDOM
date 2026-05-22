@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JAGLOTL-KINGDOM — Tore Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tore-home.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       AMBIENT LAYER — background atmospheric fx
+  ══════════════════════════════════════════ -->
+  <div class="ambient-layer" aria-hidden="true">
+    <div class="ambient-stars"></div>
+    <div class="ambient-fog"></div>
+    <div class="ambient-vignette"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       TOP BAR
+  ══════════════════════════════════════════ -->
+  <header class="top-bar" id="topBar">
+    <div class="top-bar__left">
+      <div class="player-avatar" title="Sigeralarlotl">
+        <span class="player-avatar__rune">ᚦ</span>
+      </div>
+      <div class="player-info">
+        <span class="player-info__name" id="playerName">Sigeralarlotl</span>
+        <div class="player-info__level-row">
+          <span class="level-badge" id="playerLevel">LVL <strong>7</strong></span>
+          <div class="xp-bar">
+            <div class="xp-bar__fill" id="xpBarFill" style="width: 68%"></div>
+          </div>
+          <span class="xp-label" id="xpLabel">3420 / 5000</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-bar__center">
+      <h1 class="game-title">JAGLOTL <span class="game-title__kingdom">KINGDOM</span></h1>
+    </div>
+
+    <div class="top-bar__right">
+      <div class="status-chip status-chip--builders" title="Builders available">
+        <span class="status-chip__icon">🔨</span>
+        <span class="status-chip__value" id="builderCount">2/3</span>
+      </div>
+      <div class="status-chip status-chip--shield" title="Shield active" id="shieldStatus">
+        <span class="status-chip__icon">🛡</span>
+        <span class="status-chip__value">12h</span>
+      </div>
+      <button class="notif-bell" id="notifBtn" aria-label="Notifications">
+        <span class="notif-bell__icon">🔔</span>
+        <span class="notif-bell__badge" id="notifBadge">3</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       RESOURCE BAR (below top bar on right)
+  ══════════════════════════════════════════ -->
+  <aside class="resource-bar" id="resourceBar" aria-label="Resources">
+    <div class="resource-item" data-resource="celestialGold" title="Celestial Gold">
+      <span class="resource-item__icon" style="color:#FFD700">✦</span>
+      <div class="resource-item__info">
+        <span class="resource-item__label">Celestial Gold</span>
+        <span class="resource-item__amount" id="res-celestialGold">124,500</span>
+        <div class="resource-item__bar">
+          <div class="resource-item__bar-fill" style="width:24.9%;background:#FFD700"></div>
+        </div>
+      </div>
+    </div>
+    <div class="resource-item" data-resource="divineElixir" title="Divine Elixir">
+      <span class="resource-item__icon" style="color:#9B59B6">⬡</span>
+      <div class="resource-item__info">
+        <span class="resource-item__label">Divine Elixir</span>
+        <span class="resource-item__amount" id="res-divineElixir">87,200</span>
+        <div class="resource-item__bar">
+          <div class="resource-item__bar-fill" style="width:29%;background:#9B59B6"></div>
+        </div>
+      </div>
+    </div>
+    <div class="resource-item" data-resource="voidEssence" title="Void Essence">
+      <span class="resource-item__icon" style="color:#1ABC9C">◈</span>
+      <div class="resource-item__info">
+        <span class="resource-item__label">Void Essence</span>
+        <span class="resource-item__amount" id="res-voidEssence">3,450</span>
+        <div class="resource-item__bar">
+          <div class="resource-item__bar-fill" style="width:17%;background:#1ABC9C"></div>
+        </div>
+      </div>
+    </div>
+    <div class="resource-item" data-resource="torium" title="Torium">
+      <span class="resource-item__icon" style="color:#E74C3C">⬢</span>
+      <div class="resource-item__info">
+        <span class="resource-item__label">Torium</span>
+        <span class="resource-item__amount" id="res-torium">1,200</span>
+        <div class="resource-item__bar">
+          <div class="resource-item__bar-fill" style="width:12%;background:#E74C3C"></div>
+        </div>
+      </div>
+    </div>
+    <div class="resource-item" data-resource="jwar" title="JWAR War Tokens">
+      <span class="resource-item__icon" style="color:#F39C12">⚔</span>
+      <div class="resource-item__info">
+        <span class="resource-item__label">JWAR</span>
+        <span class="resource-item__amount" id="res-jwar">580</span>
+        <div class="resource-item__bar">
+          <div class="resource-item__bar-fill" style="width:11.6%;background:#F39C12"></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════════════
+       MAIN LAYOUT
+  ══════════════════════════════════════════ -->
+  <main class="game-layout">
+
+    <!-- LEFT PANEL -->
+    <nav class="left-panel" id="leftPanel" aria-label="Navigation">
+      <button class="left-btn left-btn--scroll" data-action="scroll-log">
+        <span class="left-btn__icon">📜</span>
+        <span class="left-btn__label">Scroll Log</span>
+      </button>
+      <button class="left-btn left-btn--quest" data-action="quest-board">
+        <span class="left-btn__icon">⚜</span>
+        <span class="left-btn__label">Quest Board</span>
+        <span class="left-btn__badge">2</span>
+      </button>
+      <button class="left-btn" data-action="alliance">
+        <span class="left-btn__icon">🛡</span>
+        <span class="left-btn__label">Alliance</span>
+      </button>
+      <button class="left-btn left-btn--raid" data-action="raid">
+        <span class="left-btn__icon">⚔</span>
+        <span class="left-btn__label">Raid</span>
+      </button>
+      <button class="left-btn" data-action="lore-chat">
+        <span class="left-btn__icon">🔮</span>
+        <span class="left-btn__label">Lore Chat</span>
+      </button>
+      <div class="left-panel__divider"></div>
+      <button class="left-btn left-btn--map" data-action="world-map">
+        <span class="left-btn__icon">🗺</span>
+        <span class="left-btn__label">World Map</span>
+      </button>
+    </nav>
+
+    <!-- CENTER MAP -->
+    <section class="center-map" id="centerMap" aria-label="Kingdom map">
+      <div class="map-ground" id="mapGround">
+        <!-- Buildings rendered by JS -->
+      </div>
+      <!-- decorative rune ring around tore -->
+      <div class="rune-ring" aria-hidden="true">
+        <span>ᚦ</span><span>ᚢ</span><span>ᚦ</span><span>ᚷ</span>
+        <span>ᚹ</span><span>ᚾ</span><span>ᛁ</span><span>ᚨ</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       BOTTOM MENU
+  ══════════════════════════════════════════ -->
+  <nav class="bottom-menu" id="bottomMenu" aria-label="Main menu">
+    <button class="bottom-btn" data-tab="legion">
+      <span class="bottom-btn__icon">⚔</span>
+      <span class="bottom-btn__label">Legion</span>
+    </button>
+    <button class="bottom-btn" data-tab="heroes">
+      <span class="bottom-btn__icon">🗡</span>
+      <span class="bottom-btn__label">Heroes</span>
+    </button>
+    <button class="bottom-btn" data-tab="relics">
+      <span class="bottom-btn__icon">🗝</span>
+      <span class="bottom-btn__label">Relics</span>
+    </button>
+    <button class="bottom-btn" data-tab="pets">
+      <span class="bottom-btn__icon">🐉</span>
+      <span class="bottom-btn__label">Pets</span>
+    </button>
+    <button class="bottom-btn bottom-btn--primary" data-tab="build">
+      <span class="bottom-btn__icon">🔨</span>
+      <span class="bottom-btn__label">Build</span>
+    </button>
+    <button class="bottom-btn" data-tab="shop">
+      <span class="bottom-btn__icon">✦</span>
+      <span class="bottom-btn__label">Shop</span>
+    </button>
+    <button class="bottom-btn" data-tab="map">
+      <span class="bottom-btn__icon">🗺</span>
+      <span class="bottom-btn__label">Map</span>
+    </button>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       BUILDING MODAL
+  ══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal" id="buildingModal">
+      <button class="modal__close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal__header">
+        <span class="modal__icon" id="modalIcon">🏰</span>
+        <div>
+          <h2 class="modal__title" id="modalTitle">Jaglotl Tore</h2>
+          <div class="modal__level-row">
+            <span class="modal__level" id="modalLevel">Level 7</span>
+            <span class="modal__rune" id="modalRune">ᚦ</span>
+          </div>
+        </div>
+      </div>
+      <p class="modal__desc" id="modalDesc">The great fortress-heart of your kingdom.</p>
+      <div class="modal__bonuses" id="modalBonuses"></div>
+      <div class="modal__cost-row" id="modalCostRow">
+        <span class="modal__cost-label">Upgrade Cost:</span>
+        <div class="modal__costs" id="modalCosts"></div>
+      </div>
+      <div class="modal__timer-row">
+        <span class="modal__timer-label">Build Time:</span>
+        <span class="modal__timer" id="modalTimer">48h 00m</span>
+        <!-- future builder queue hook -->
+      </div>
+      <div class="modal__actions">
+        <button class="modal__btn modal__btn--upgrade" id="modalUpgradeBtn">
+          <span>Upgrade to Level</span>
+          <span id="modalNextLevel">8</span>
+        </button>
+        <!-- future backend hook: save upgrade state -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       BUILD MENU PANEL (bottom drawer)
+  ══════════════════════════════════════════ -->
+  <div class="build-drawer" id="buildDrawer" aria-hidden="true">
+    <div class="build-drawer__handle"></div>
+    <h3 class="build-drawer__title">Available Structures</h3>
+    <div class="build-drawer__grid" id="buildDrawerGrid">
+      <!-- future backend hook: available buildable structures from tore level -->
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       TOAST NOTIFICATIONS
+  ══════════════════════════════════════════ -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="tore-home.js"></script>
+</body>
+</html>

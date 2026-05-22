@@ -1,0 +1,60 @@
+{
+  "units": [
+    {
+      "id": "runeborn_warrior",
+      "name": "Runeborn Warrior",
+      "tier": 1,
+      "type": "melee",
+      "attack": 42,
+      "defense": 38,
+      "hp": 200,
+      "speed": "medium",
+      "trainCost": { "celestialGold": 800, "divineElixir": 0 },
+      "trainTime": 60,
+      "description": "Hardened foot soldiers marked with runes of resilience.",
+      "icon": "⚔"
+    },
+    {
+      "id": "void_archer",
+      "name": "Void Archer",
+      "tier": 1,
+      "type": "ranged",
+      "attack": 68,
+      "defense": 18,
+      "hp": 120,
+      "speed": "fast",
+      "trainCost": { "celestialGold": 1200, "divineElixir": 200 },
+      "trainTime": 90,
+      "description": "Hunters who coat their arrows in distilled void essence.",
+      "icon": "🏹"
+    },
+    {
+      "id": "celestial_knight",
+      "name": "Celestial Knight",
+      "tier": 2,
+      "type": "cavalry",
+      "attack": 95,
+      "defense": 72,
+      "hp": 480,
+      "speed": "very fast",
+      "trainCost": { "celestialGold": 4000, "divineElixir": 2000 },
+      "trainTime": 300,
+      "description": "Elite mounted warriors blessed by the celestial forge.",
+      "icon": "🗡"
+    },
+    {
+      "id": "torium_golem",
+      "name": "Torium Golem",
+      "tier": 3,
+      "type": "siege",
+      "attack": 180,
+      "defense": 150,
+      "hp": 1200,
+      "speed": "slow",
+      "trainCost": { "torium": 50, "celestialGold": 12000 },
+      "trainTime": 900,
+      "description": "Massive constructs forged from raw torium ore.",
+      "icon": "🪨"
+    }
+  ]
+}

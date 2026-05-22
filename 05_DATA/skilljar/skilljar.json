@@ -1,0 +1,47 @@
+{
+  "skilljar": {
+    "maxSlots": 6,
+    "unlockedSlots": 3,
+    "presets": [
+      {
+        "id": "preset_void_rush",
+        "name": "Void Rush",
+        "type": "battle_formation",
+        "rune": "ᚢ",
+        "description": "All-in aggressive push. Max speed units, wyvern lead.",
+        "formation": "wedge",
+        "units": ["void_archer", "void_archer", "celestial_knight", "celestial_knight"],
+        "pet": "embervein_wyvern",
+        "hero": "hero_sigrid",
+        "relics": ["relic_stormcrown", "relic_bloodseal"],
+        "saved": true
+      },
+      {
+        "id": "preset_shield_wall",
+        "name": "Shield Wall",
+        "type": "defense_formation",
+        "rune": "ᚦ",
+        "description": "Turtle defense with golem vanguard and shrine blessing.",
+        "formation": "phalanx",
+        "units": ["runeborn_warrior", "runeborn_warrior", "torium_golem"],
+        "pet": "frostbone_hound",
+        "hero": "hero_bolverk",
+        "relics": ["relic_aegis"],
+        "saved": true
+      },
+      {
+        "id": "preset_rune_harvest",
+        "name": "Rune Harvest",
+        "type": "resource_raid",
+        "rune": "ᚷ",
+        "description": "Optimized for looting celestial gold from weakly defended targets.",
+        "formation": "spread",
+        "units": ["void_archer", "runeborn_warrior"],
+        "pet": null,
+        "hero": "hero_sigrid",
+        "relics": ["relic_greed_token"],
+        "saved": true
+      }
+    ]
+  }
+}

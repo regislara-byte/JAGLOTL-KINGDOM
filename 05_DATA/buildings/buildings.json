@@ -1,0 +1,196 @@
+{
+  "buildings": [
+    {
+      "id": "tore",
+      "name": "Jaglotl Tore",
+      "type": "hq",
+      "level": 7,
+      "maxLevel": 25,
+      "description": "The great fortress-heart of your kingdom. All progression flows from the Tore.",
+      "icon": "🏰",
+      "rune": "ᚦ",
+      "gridX": 3,
+      "gridY": 3,
+      "size": 3,
+      "upgradeCost": {
+        "celestialGold": 85000,
+        "divineElixir": 40000,
+        "torium": 200
+      },
+      "upgradeTime": 172800,
+      "bonuses": ["Unlocks new buildings", "+5% defense bonus", "Increases builder capacity"],
+      "isCenter": true
+    },
+    {
+      "id": "builder_hut",
+      "name": "Builder Hut",
+      "type": "utility",
+      "level": 3,
+      "maxLevel": 10,
+      "description": "Houses the master builders who construct and upgrade your kingdom.",
+      "icon": "🔨",
+      "rune": "ᚱ",
+      "gridX": 1,
+      "gridY": 1,
+      "size": 1,
+      "upgradeCost": {
+        "celestialGold": 12000,
+        "divineElixir": 6000
+      },
+      "upgradeTime": 28800,
+      "bonuses": ["+1 builder slot at level 5", "Faster construction"],
+      "isCenter": false
+    },
+    {
+      "id": "celestial_mine",
+      "name": "Celestial Mine",
+      "type": "resource",
+      "level": 5,
+      "maxLevel": 15,
+      "description": "Channels the celestial ley-lines to harvest raw golden essence.",
+      "icon": "⛏",
+      "rune": "ᚷ",
+      "gridX": 5,
+      "gridY": 2,
+      "size": 1,
+      "upgradeCost": {
+        "celestialGold": 18000,
+        "torium": 50
+      },
+      "upgradeTime": 43200,
+      "bonuses": ["+400 gold/hr", "Increased storage cap"],
+      "isCenter": false
+    },
+    {
+      "id": "divine_shrine",
+      "name": "Divine Shrine",
+      "type": "resource",
+      "level": 4,
+      "maxLevel": 15,
+      "description": "A sacred altar that distills elixir from divine breath and moonfall.",
+      "icon": "⬡",
+      "rune": "ᚹ",
+      "gridX": 2,
+      "gridY": 5,
+      "size": 1,
+      "upgradeCost": {
+        "celestialGold": 15000,
+        "divineElixir": 8000
+      },
+      "upgradeTime": 36000,
+      "bonuses": ["+300 elixir/hr", "+1 ritual slot"],
+      "isCenter": false
+    },
+    {
+      "id": "skilljar",
+      "name": "Skilljar",
+      "type": "strategy",
+      "level": 2,
+      "maxLevel": 10,
+      "description": "Vault of learned doctrines. Store and recall battle formations, hero combos, and relic loadouts.",
+      "icon": "📜",
+      "rune": "ᚾ",
+      "gridX": 5,
+      "gridY": 5,
+      "size": 1,
+      "upgradeCost": {
+        "celestialGold": 22000,
+        "voidEssence": 300
+      },
+      "upgradeTime": 57600,
+      "bonuses": ["+2 preset slots", "Unlock advanced formations"],
+      "isCenter": false
+    },
+    {
+      "id": "beast_sanctum",
+      "name": "Beast Sanctum",
+      "type": "pet",
+      "level": 1,
+      "maxLevel": 10,
+      "description": "Where primordial beasts are tamed, bonded, and trained for war and scouting.",
+      "icon": "🐉",
+      "rune": "ᚢ",
+      "gridX": 6,
+      "gridY": 4,
+      "size": 1,
+      "upgradeCost": {
+        "celestialGold": 30000,
+        "voidEssence": 500,
+        "jwar": 100
+      },
+      "upgradeTime": 86400,
+      "bonuses": ["+1 beast slot", "Unlock rare beasts"],
+      "isCenter": false
+    },
+    {
+      "id": "relic_vault",
+      "name": "Relic Vault",
+      "type": "storage",
+      "level": 1,
+      "maxLevel": 10,
+      "description": "A sealed chamber of rune-iron where ancient relics are catalogued and preserved.",
+      "icon": "🗝",
+      "rune": "ᛟ",
+      "gridX": 1,
+      "gridY": 5,
+      "size": 1,
+      "upgradeCost": {
+        "celestialGold": 25000,
+        "torium": 150
+      },
+      "upgradeTime": 72000,
+      "bonuses": ["+5 relic storage", "Unlock relic fusion"],
+      "isCenter": false
+    },
+    {
+      "id": "scout_tower",
+      "name": "Scout Tower",
+      "type": "defense",
+      "level": 3,
+      "maxLevel": 15,
+      "description": "A vigilant watchtower that surveys the horizon and warns of incoming threats.",
+      "icon": "🗼",
+      "rune": "ᛏ",
+      "gridX": 6,
+      "gridY": 1,
+      "size": 1,
+      "upgradeCost": {
+        "celestialGold": 9000,
+        "divineElixir": 4500
+      },
+      "upgradeTime": 21600,
+      "bonuses": ["+15% detection range", "Early raid warning"],
+      "isCenter": false
+    },
+    {
+      "id": "empty_tile_1",
+      "name": "Empty Tile",
+      "type": "empty",
+      "level": 0,
+      "gridX": 2,
+      "gridY": 2,
+      "size": 1,
+      "isCenter": false
+    },
+    {
+      "id": "empty_tile_2",
+      "name": "Empty Tile",
+      "type": "empty",
+      "level": 0,
+      "gridX": 4,
+      "gridY": 6,
+      "size": 1,
+      "isCenter": false
+    },
+    {
+      "id": "empty_tile_3",
+      "name": "Empty Tile",
+      "type": "empty",
+      "level": 0,
+      "gridX": 6,
+      "gridY": 6,
+      "size": 1,
+      "isCenter": false
+    }
+  ]
+}
